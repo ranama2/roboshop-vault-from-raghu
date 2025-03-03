@@ -32,7 +32,6 @@ resource "vault_generic_secret" "ssh" {
 EOT
 }
 
-
 resource "vault_mount" "roboshop-dev" {
   path        = "roboshop-dev"
   type        = "kv"
@@ -45,8 +44,9 @@ resource "vault_generic_secret" "roboshop-dev-cart" {
 
   data_json = <<EOT
 {
-  "username":   "ec2-user",
-  "password": "DevOps321"
+"REDIS_HOST":   "redis-dev.rdevopsb83.online",
+"CATALOGUE_HOST": "catalogue-dev.rdevopsb83.online",
+"CATALOGUE_PORT": "8080"
 }
 EOT
 }
