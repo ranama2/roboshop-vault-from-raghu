@@ -67,11 +67,11 @@ resource "vault_generic_secret" "roboshop-dev-frontend" {
 
   data_json = <<EOT
 {
-"catalogue_url":   "http://catalogue-dev.rdevopsb83.online:8080/",
-"user_url":   "http://user-dev.rdevopsb83.online:8080/",
-"cart_url":   "http://cart-dev.rdevopsb83.online:8080/",
-"shipping_url":   "http://shipping-dev.rdevopsb83.online:8080/",
-"payment_url":   "http://payment-dev.rdevopsb83.online:8080/"
+"catalogue":   "http://catalogue-dev.rdevopsb83.online:8080/",
+"user":   "http://user-dev.rdevopsb83.online:8080/",
+"cart":   "http://cart-dev.rdevopsb83.online:8080/",
+"shipping":   "http://shipping-dev.rdevopsb83.online:8080/",
+"payment":   "http://payment-dev.rdevopsb83.online:8080/"
 }
 EOT
 }
