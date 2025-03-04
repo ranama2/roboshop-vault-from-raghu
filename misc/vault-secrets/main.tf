@@ -84,7 +84,7 @@ resource "vault_generic_secret" "roboshop-dev-payment" {
 "CART_HOST" : "cart-dev.rdevopsb83.online",
 "CART_PORT" : 8080,
 "USER_HOST" : "user-dev.rdevopsb83.online",
-"USER_PORT" : 8080
+"USER_PORT" : 8080,
 "AMQP_HOST" : "rabbitmq-dev.rdevopsb83.online",
 "AMQP_USER" : "roboshop",
 "AMQP_PASS" : "roboshop123"
