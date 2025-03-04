@@ -9,7 +9,6 @@ ansible:
 
 secrets:
 	git pull
-	cd misc/vault-secrets
-	make vault_token=$(vault_token)
+	cd misc/vault-secrets ; make vault_token=$(vault_token)
 
 
