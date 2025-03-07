@@ -71,7 +71,17 @@ resource "vault_generic_secret" "roboshop-dev-frontend" {
 "user":   "http://user-dev.rdevopsb83.online:8080/",
 "cart":   "http://cart-dev.rdevopsb83.online:8080/",
 "shipping":   "http://shipping-dev.rdevopsb83.online:8080/",
-"payment":   "http://payment-dev.rdevopsb83.online:8080/"
+"payment":   "http://payment-dev.rdevopsb83.online:8080/",
+"CATALOGUE_HOST" : "catalogue-dev.rdevopsb83.online",
+"CATALOGUE_PORT" : "8080",
+"USER_HOST" : "user-dev.rdevopsb83.online",
+"USER_PORT" : "8080",
+"CART_HOST" : "cart-dev.rdevopsb83.online",
+"CART_PORT" : "8080",
+"SHIPPING_HOST" : "shipping-dev.rdevopsb83.online",
+"SHIPPING_PORT" : "8080",
+"PAYMENT_HOST" : "payment-dev.rdevopsb83.online",
+"PAYMENT_PORT" : "8080"
 }
 EOT
 }
