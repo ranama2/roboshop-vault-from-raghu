@@ -21,7 +21,7 @@
     remote_src: yes
 
 - name: Configure github runner
-  ansible.builtin.shell: echo ./config.sh --url https://github.com/raghudevopsb83 --token {{ lookup('community.hashi_vault.hashi_vault', 'secret=infra/data/github-runner token={{ vault_token }} url=http://vault-internal.rdevopsb83.online:8200') }}
+  ansible.builtin.shell: echo ./config.sh --url https://github.com/raghudevopsb83 --token {{ lookup('community.hashi_vault.hashi_vault', 'secret=infra/data/github-runner:RUNNER_TOKEN token={{ vault_token }} url=http://vault-internal.rdevopsb83.online:8200') }}
   args:
     chdir:  /actions-runner
   become_user: github
