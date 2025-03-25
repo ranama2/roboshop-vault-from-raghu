@@ -15,11 +15,11 @@
 - name: Check already runner configured status
   ansible.builtin.stat:
     path: /actions-runner/.runner
-  register: runner-stat
+  register: runner_stat
 
 - name: debug
   debug:
-    msg: "{{ runner-stat }}"
+    msg: "{{ runner_stat }}"
 
 - name: Download github runner
   ansible.builtin.unarchive:
