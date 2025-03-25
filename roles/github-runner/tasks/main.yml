@@ -28,7 +28,7 @@
     owner: github
     group: github
     remote_src: yes
-  when: not stat.exists
+  when: not runner_stat.stat.exists
 
 - name: Install libicu dependency package
   ansible.builtin.dnf:
