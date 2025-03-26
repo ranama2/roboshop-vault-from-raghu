@@ -79,6 +79,11 @@
   args:
     chdir: /tmp
 
+- name: Install Podman
+  ansible.builtin.dnf:
+    name: podman
+    state: installed
+
 
 
 
