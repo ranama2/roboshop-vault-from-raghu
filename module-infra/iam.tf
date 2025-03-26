@@ -21,7 +21,7 @@ resource "aws_iam_instance_profile" "main" {
   role = aws_iam_role.main.name
 }
 
-resource "aws_iam_policy" "policy" {
+resource "aws_iam_policy" "main" {
   name        = "${var.name}-role-policy"
   path        = "/"
   description = "${var.name}-role-policy"
@@ -36,5 +36,10 @@ resource "aws_iam_policy" "policy" {
       },
     ]
   })
+}
+
+resource "aws_iam_role_policy_attachment" "main" {
+  role       = aws_iam_role.main.name
+  policy_arn = aws_iam_policy.main.arn
 }
 
