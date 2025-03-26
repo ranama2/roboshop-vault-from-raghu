@@ -13,7 +13,7 @@ variable "tools" {
       instance_type = "t3.small"
       port          = 8200
       iam_policy    = {
-        Actions     = []
+        Action      = []
         Resource    = []
       }
     }
@@ -22,7 +22,7 @@ variable "tools" {
       instance_type = "t3.small"
       port          = 443 # Dummy port
       iam_policy    = {
-        Actions     = []
+        Action      = []
         Resource    = []
       }
     }
