@@ -32,7 +32,7 @@ resource "aws_iam_policy" "main" {
       {
         Action   = local.policy_action
         Effect   = "Allow"
-        Resource = length(var.iam_policy["Resource"]) == 0 ? ["*"] :  var.iam_policy["Resource"]
+        Resource = length(var.iam_policy["Resource"]) == 0 ? ["*"] : var.iam_policy["Resource"]
       },
     ]
   })
