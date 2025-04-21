@@ -11,7 +11,7 @@ variable "tools" {
 
     vault = {
       instance_type     = "t3.small"
-      port              = {
+      ports             = {
         vault = 8200
       }
       root_block_device = 20
