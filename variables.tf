@@ -11,7 +11,9 @@ variable "tools" {
 
     vault = {
       instance_type     = "t3.small"
-      port              = 8200
+      port              = {
+        vault = 8200
+      }
       root_block_device = 20
       iam_policy = {
         Action   = []
@@ -21,7 +23,7 @@ variable "tools" {
 
     github-runner = {
       instance_type     = "t3.small"
-      port              = 443 # Dummy port
+      ports             = {}
       root_block_device = 30
       iam_policy = {
         Action   = ["*"]
