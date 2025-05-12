@@ -3,14 +3,14 @@ variable "ami_id" {
 }
 
 variable "zone_id" {
-  default = "Z01662431H5LL60AVTC0E"
+  default = "Z040862479ELHY34R71D"
 }
 
 variable "tools" {
   default = {
 
     vault = {
-      instance_type     = "t3.small"
+      instance_type     = "t2.micro"
       ports             = {
         vault = 8200
       }
